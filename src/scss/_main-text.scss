@@ -8,4 +8,12 @@
     &__paragraph{
         line-height: 25px;
     }
-}  
+}
+
+@media screen and (min-width:1024px){
+    .main-text{
+        text-align: left;
+
+        margin-left: 2em;
+    }
+}

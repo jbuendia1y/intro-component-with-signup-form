@@ -1,7 +1,16 @@
 .box-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,auto);
     padding: 1em;
+}
+
+@media screen and (min-width:1024px){
+    .box-container{
+        grid-template-columns: repeat(2,minmax(496px,35%));
+        grid-column-gap: 1.5em;
+
+        align-items: center;
+        justify-content: center;
+    }
 }
