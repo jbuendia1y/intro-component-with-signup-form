@@ -1,0 +1,11 @@
+.main-text{
+    text-align: center;
+
+    &__title,&__paragraph{
+        color: white;
+    }
+
+    &__paragraph{
+        line-height: 25px;
+    }
+}  

@@ -1,0 +1,33 @@
+/* Variables */
+$red : hsl(0, 100%, 74%);
+$green : hsl(154, 59%, 51%);
+$blue : hsl(248, 32%, 49%);
+$DarkBlue: hsl(249, 10%, 26%);
+$GrayishBlue: hsl(246, 25%, 77%);
+
+$font : 'Poppins', sans-serif;
+
+/* Imports */
+@import "box-container";
+@import "main-text";
+@import "sing-up";
+@import "form";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Base */
+body{
+    font-size: 16px;
+    font-family: $font;
+    background-color: $red;
+    background-image: url(/images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
