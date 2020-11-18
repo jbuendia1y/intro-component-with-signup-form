@@ -8,11 +8,13 @@ let cont = 0;
 const errorMsg = (input)=>{
   input.parentElement.classList.add('alert__img')
   input.nextElementSibling.classList.add('active')
+  input.classList.add('active-Icolor')
 }
 
 const hideErrorMsg = (input)=>{
   input.parentElement.classList.remove('alert__img')
   input.nextElementSibling.classList.remove('active')
+  input.classList.remove('active-Icolor')
 }
 
 /* Validations */

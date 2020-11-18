@@ -7,6 +7,7 @@
     border-radius: 10px;
 
     background-color: white;
+    box-shadow: 0 10px 0 0 hsla(249, 10%, 26%,.2);
 
     &__item{
         display: grid;
@@ -19,7 +20,7 @@
         flex-direction: column;
     }
 
-    &__input,&__input:invalid{
+    &__input{
         color: $DarkBlue;
         font-weight: bold;
 
@@ -45,12 +46,15 @@
     &__button{
         color: white;
         text-transform: uppercase;
+        font-weight: 500;
 
         background-color: $green;
         border: none;
         border-radius: 5px;
+        box-shadow: 0 5px 0 0 hsla(154, 59%, 51%,.7);
 
         padding: 1em;
+        margin-bottom: 1em;
 
         cursor: pointer;
     }
