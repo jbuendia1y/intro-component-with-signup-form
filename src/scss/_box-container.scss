@@ -7,7 +7,10 @@
 
 @media screen and (min-width:1024px){
     .box-container{
-        grid-template-columns: repeat(2,minmax(496px,35%));
+        max-width: 1000px;
+        padding: 2em;
+
+        grid-template-columns: repeat(2,minmax(50%,max-content));
         grid-column-gap: 1.5em;
 
         align-items: center;

@@ -34,10 +34,24 @@
     <form class="form">
       
       <div class="form__item">
-        <input type="text" placeholder="First Name" class="form__input"> 
-        <input type="text" placeholder="Last Name" class="form__input">
-        <input type="email" placeholder="Email Address" class="form__input">
-        <input type="password" placeholder="Password" class="form__input">
+        <div class="form__inputs">
+          <input type="text" placeholder="First Name" class="form__input">
+          <p class="form__input-alert">First Name cannot be empty</p>
+        </div>
+
+        <div class="form__inputs">
+          <input type="text" placeholder="Last Name" class="form__input">
+          <p class="form__input-alert">Last Name cannot be empty</p>  
+        </div>
+        <div class="form__inputs">
+          <input id="email" type="email" placeholder="Email Address" class="form__input">
+          <p class="form__input-alert">Look like this is cannot be empty</p>
+        </div>
+        <div class="form__inputs">
+          <input type="password" placeholder="Password" class="form__input">
+        <p class="form__input-alert">Password cannot be empty</p>
+        </div>
+        
       </div>
   
       <button class="form__button">Claim your free trial</button> 
@@ -51,11 +65,13 @@
     </div>
   </div>
   
-  <footer>
+  <footer class="footer">
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Joaquín Buendía</a>.
     </p>
   </footer>
+
+  <script src="src/js/scripts.js"></script>
 </body>
 </html>

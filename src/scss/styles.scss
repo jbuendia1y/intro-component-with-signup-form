@@ -12,6 +12,7 @@ $font : 'Poppins', sans-serif;
 @import "main-text";
 @import "sing-up";
 @import "form";
+@import "alerts-error";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -39,6 +40,12 @@ body{
         height: 100vh;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+    }
+
+    .footer{
+        position: absolute;
+        bottom: 0;
     }
 }

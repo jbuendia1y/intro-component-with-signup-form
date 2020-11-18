@@ -9,11 +9,17 @@
     background-color: white;
 
     &__item{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,auto);
+    }
+
+    &__inputs{
         display: flex;
         flex-direction: column;
     }
 
-    &__input{
+    &__input,&__input:invalid{
         color: $DarkBlue;
         font-weight: bold;
 
@@ -23,6 +29,17 @@
 
         padding: 1em;
         margin-bottom: 1em;
+
+        box-shadow: none;
+    }
+
+    &__input-alert{
+            display: none;
+
+            margin: 0;
+            margin-bottom: 1em;
+            color: $red;
+            text-align: right;
     }
 
     &__button{
@@ -46,5 +63,11 @@
             color: $red;
             font-weight: bold;
         }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .form{
+        padding: 2em;
     }
 }

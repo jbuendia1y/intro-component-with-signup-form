@@ -1,0 +1,26 @@
+/* Actives */
+.alert__img{
+    position: relative;
+
+    &::after{
+        content: "";
+        width: 30px;
+        height: 30px;
+
+        background-image: url(/images/icon-error.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: $red;
+
+        position: absolute;
+        top: 15%;
+        right: 10px;
+
+        border-radius: 50%;
+    }
+}
+
+.active{
+    display: block;
+}
